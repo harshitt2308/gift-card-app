@@ -1,0 +1,55 @@
+:root {
+  /* Default Night theme */
+  --bg-color: #0f172a;
+  --text-color: #fff;
+  --neon-color: #a855f7;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --hover-neon: #c084fc;
+  --shadow-neon: 0 0 10px #a855f7;
+}
+
+[data-theme='dawn'] {
+  --bg-color: #f0e7db;
+  --text-color: #4a4a4a;
+  --neon-color: #a3b18a;
+  --border-color: rgba(163, 177, 138, 0.3);
+  --hover-neon: #8cae3f;
+  --shadow-neon: 0 0 10px #a3b18a;
+}
+
+[data-theme='festival'] {
+  --bg-color: #fdf6e3;
+  --text-color: #7c2d12;
+  --neon-color: #f97316; /* bright orange */
+  --border-color: rgba(249, 115, 22, 0.3);
+  --hover-neon: #ea580c;
+  --shadow-neon: 0 0 12px #f97316;
+}
+
+/* Example usage */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.border-neon {
+  border-color: var(--border-color) !important;
+}
+
+.text-neon {
+  color: var(--neon-color) !important;
+  text-shadow: var(--shadow-neon);
+}
+
+.bg-neon {
+  background-color: var(--neon-color) !important;
+  box-shadow: var(--shadow-neon);
+}
+
+.hover\:shadow-neon:hover {
+  box-shadow: var(--shadow-neon);
+}
+
+.hover\:text-white:hover {
+  color: #fff;
+}
