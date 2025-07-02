@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage, Float, useGLTF } from '@react-three/drei';
 
 function GiftModel() {
-  const { scene } = useGLTF('/models/gift.glb');
+  const { scene } = useGLTF(import.meta.env.BASE_URL + 'models/gift.glb');
   return <primitive object={scene} scale={1.2} />;
 }
 
